@@ -55,10 +55,6 @@ python scraper_perfil.py
 - **`README.md`** - Documentación completa del proyecto
 - **`README_VARIABLES.md`** - Documentación técnica de variables
 
-### 📚 **Archivos Legacy/Referencia**
-- **`scraper_user_data.py`** - Scraper original (solo datos básicos)
-- **`query_data_user.py`** - Prototipo GraphQL inicial
-
 ### 🧪 **Archivos de Prueba/Debug (Pueden eliminarse)**
 - `debug_*.py` - Scripts de debugging
 - `test_*.py` - Scripts de testing
@@ -223,57 +219,7 @@ scraper = ScraperPerfil(debug_mode=True)
 
 ### 🎯 **Inicialización Automática con Perfiles Famosos**
 
-El sistema incluye inicialización automática con **50+ perfiles públicos famosos** listos para scrapear:
-
-#### **🏃‍♂️ Deportistas**
-- `leomessi`, `cristiano`, `neymarjr`, `k.mbappe`, `sergiamos`
-- `fcbarcelona`, `realmadrid`
-
-#### **🌟 Celebridades Internacionales**
-- `therock`, `arianagrande`, `selenagomez`, `justinbieber`
-- `taylorswift`, `kimkardashian`, `kyliejenner`
-
-#### **🏢 Marcas y Medios**
-- `instagram`, `netflix`, `nike`, `adidas`, `cocacola`
-- `nasa`, `natgeo`
-
-#### **🎵 Celebridades Hispanohablantes**
-- `shakira`, `jbalvin`, `maluma`, `badgalriri`, `zendaya`
-
-#### **🎮 Influencers y Creadores**
-- `elrubius`, `theellenshow`, `gordodan`, `pewdiepie`
-
-#### **🎬 Actores y Entretenimiento**
-- `vancityreynolds`, `priyankachopra`, `vindiesel`
-- `tomholland2013`, `zacefron`
-
-#### **🎤 Música**
-- `ddlovato`, `champagnepapi`, `justintimberlake`
-- `brunomars`, `ladygaga`
-
-### **🚀 Cómo Funciona la Inicialización**
-
-```python
-# Automática al ejecutar scraper_perfil.py
-python scraper_perfil.py
-# ✅ Detecta si la BD está vacía
-# ✅ Inicializa con 50+ perfiles famosos
-# ✅ Lista para scrapear inmediatamente
-
-# Manual con script dedicado
-python init_database.py
-# ✅ Inicialización independiente
-# ✅ Perfecto para configuración inicial
-# ✅ Ideal para repositorios Git
-```
-
-### **📊 Ventajas de la Inicialización Automática**
-
-- **🎯 Listo para usar**: No necesitas buscar usernames manualmente
-- **🌟 Perfiles de calidad**: Solo perfiles públicos verificados
-- **📈 Datos ricos**: Perfiles con muchos seguidores y contenido
-- **🔄 Diversidad**: Deportes, entretenimiento, marcas, influencers
-- **🚀 Git-friendly**: Perfecto para clonar y ejecutar inmediatamente
+El sistema incluye inicialización automática con perfiles listos para scrapear
 
 ### **🗂️ Estructura de Tablas**
 
