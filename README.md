@@ -55,14 +55,6 @@ python scraper_perfil.py
 - **`README.md`** - Documentación completa del proyecto
 - **`README_VARIABLES.md`** - Documentación técnica de variables
 
-### 🧪 **Archivos de Prueba/Debug (Pueden eliminarse)**
-- `debug_*.py` - Scripts de debugging
-- `test_*.py` - Scripts de testing
-- `ejemplo_response_*.json` - Respuestas de ejemplo
-- `find_working_doc_ids.py` - Buscador de doc IDs
-- `doc_id_manager.py` - Gestor de doc IDs (no usado en versión final)
-- `auto_doc_id_finder.py` - Finder automático de doc IDs
-
 ## 🆕 Características del Nuevo Scraper GraphQL
 
 ### ✅ **Datos Completos Extraídos**
@@ -456,25 +448,6 @@ rm debug_problematic_users.py
 - `instagram_data.db` - Base de datos SQLite principal (**ignorado por Git**)
 - `instagram_profiles.csv` - Archivo CSV (si está habilitado) (**ignorado por Git**)
 - `instagram_credentials.json` - Credenciales guardadas (**ignorado por Git**)
-
-## 🔄 Subir a Git
-
-### **📤 Configuración Inicial**
-```bash
-# Inicializar repositorio Git
-git init
-
-# Agregar archivos (la BD y credenciales se ignoran automáticamente)
-git add .
-
-# Primer commit
-git commit -m "Initial commit: Instagram Scraper with auto-initialization"
-
-# Conectar con repositorio remoto
-git remote add origin <URL_DE_TU_REPOSITORIO>
-
-# Subir al repositorio
-git push -u origin main
 ```
 
 ### **🔒 Archivos Ignorados por Git**
@@ -547,54 +520,6 @@ Formato del archivo `instagram_credentials.json`:
 }
 ```
 
-### **✅ Archivos que SÍ se suben a Git**
-- ✅ `scraper_perfil.py` - Código principal
-- ✅ `database.py` - Módulo de BD con inicialización
-- ✅ `login.py` - Sistema de autenticación
-- ✅ `config.py` - Configuración
-- ✅ `init_database.py` - Script de inicialización
-- ✅ `README.md` - Documentación
-- ✅ `.gitignore` - Configuración de Git
-- ✅ `instagram_credentials.example.json` - Ejemplo de formato de credenciales
-- ✅ `setup_git.bat` / `setup_git.sh` - Scripts de configuración Git
-
-### **🚀 Clonar y Usar**
-```bash
-# Cualquier persona puede clonar y usar inmediatamente
-git clone <URL_DEL_REPOSITORIO>
-cd instagram-scraper
-
-# Instalar dependencias
-pip install selenium webdriver-manager requests
-
-# Inicializar con perfiles famosos
-python init_database.py
-
-# Comenzar scraping
-python scraper_perfil.py
-```
-
-### **🔄 Actualizaciones**
-```bash
-# Actualizar código (sin afectar la BD local)
-git pull origin main
-
-# La BD local se mantiene intacta
-# Las credenciales guardadas se mantienen
-```
-
-### **🛡️ Verificación de Seguridad**
-```bash
-# Verificar que archivos sensibles no se suban accidentalmente
-python check_git_safety.py
-
-# Este script verifica:
-# ✅ Estado de archivos en Git
-# ✅ Configuración de .gitignore
-# ✅ Archivos sensibles protegidos
-# ✅ Credenciales seguras
-```
-
 ## � *o*Monitoreo y Mantenimiento**
 
 ### **📊 Indicadores de Salud del Scraper**
@@ -640,13 +565,6 @@ SCRAPING_CONFIG = {
 
 ---
 
-## 🎉 **¡Nuevo Sistema GraphQL Completo!**
 
-**El nuevo `scraper_perfil.py` es la evolución del sistema original, extrayendo datos completos de Instagram de forma rápida y eficiente usando la API GraphQL directa.**
 
-### **Migración Recomendada:**
-1. ✅ Usar `scraper_perfil.py` para nuevos proyectos
-2. 📚 Mantener `scraper_user_data.py` como referencia
-3. 🗑️ Eliminar archivos de testing/debug
-4. 🔄 Migrar usuarios existentes ejecutando el nuevo scraper
 
