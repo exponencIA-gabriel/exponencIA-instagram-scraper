@@ -1,6 +1,6 @@
-# Instagram Scraper GraphQL Completo - Sistema Avanzado con Base de Datos
+# Instagram Scraper de Perfiles
 
-Sistema de scraping avanzado de Instagram que usa GraphQL API directa para extraer datos completos de usuarios, incluyendo posts e historias destacadas, con base de datos SQLite para evitar re-scrapear perfiles ya completos.
+Sistema de scraping de Instagram que usa GraphQL API directa para extraer datos completos de usuarios, incluyendo posts e historias destacadas, con base de datos SQLite para evitar re-scrapear perfiles ya completos.
 
 ## 🚀 Inicio Rápido
 
@@ -55,7 +55,7 @@ python scraper_perfil.py
 - **`README.md`** - Documentación completa del proyecto
 - **`README_VARIABLES.md`** - Documentación técnica de variables
 
-## 🆕 Características del Nuevo Scraper GraphQL
+## 🆕 Características
 
 ### ✅ **Datos Completos Extraídos**
 - **Información básica**: Seguidores, siguiendo, biografía, etc.
