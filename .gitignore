@@ -1,0 +1,58 @@
+# Credenciales de Instagram (NUNCA subir a Git)
+instagram_credentials.json
+*credentials*.json
+*password*.txt
+*login*.json
+*auth*.json
+
+# Base de datos (se regenera automáticamente)
+*.db
+*.sqlite
+*.sqlite3
+
+# Resultados y archivos temporales
+*.csv
+*.json.bak
+*.tmp
+temp_*
+debug_response_*.json
+
+# Archivos de sesión y cookies
+session_*
+cookies_*
+*.session
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Logs y debugging
+*.log
+debug_*.txt
+error_*.txt
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Selenium
+chromedriver*
+geckodriver*
+*.exe
